@@ -3,7 +3,9 @@ package com.student360.score;
 import com.student360.entity.Student;
 import com.student360.repository.*;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/score")
 public class ScoreController {
